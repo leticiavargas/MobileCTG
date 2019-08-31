@@ -1,10 +1,10 @@
 import React from 'react';
 import {View, Text, StyleSheet, Alert} from 'react-native';
 
-import api from '../services/api';
+import api from '../services/Api';
 
-import {ButtonPrimary, ButtonText} from '../components/buttons';
-import {InputText} from '../components/inputs';
+import {ButtonPrimary, ButtonText} from '../components/Buttons';
+import {InputText} from '../components/Inputs';
 
 class Signup extends React.Component{   
 

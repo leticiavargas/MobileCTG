@@ -1,19 +1,19 @@
 import React from 'react';
 import {View, Image, StyleSheet, Text, StatusBar, AsyncStorage, Alert} from 'react-native';
-import api from '../services/api';
+import api from '../services/Api';
 
-import {ButtonPrimary, ButtonText} from '../components/buttons';
-import {InputText} from '../components/inputs';
+import {ButtonPrimary, ButtonText} from '../components/Buttons';
+import {InputText} from '../components/Inputs';
 
 class Login extends React.Component {
     
     static navigationOptions ={
-        header: null
-    }
+        header: null,
+    };
 
     state={
-        email:'',
-        passwd:'',
+        email:undefined,
+        passwd:undefined,
         login:[],
         isLoading:false,
         error:''
@@ -53,8 +53,10 @@ class Login extends React.Component {
             try{
                 login = this.state;
                //this.setState({isLoading: true, error:''});
-                 const response = await api.post(`/signin`, login);
-              /* await AsyncStorage.setItem('@MyCTGApp:token', response.data.token); */
+                const response = await api.post(`/signin`, login);
+                
+                //TODO Verificar como funciona o Token ... 
+                //await AsyncStorage.setItem('@MyCTGApp:token', response.data.token); 
               if(response.status === 200){
                   this.props.navigation.replace('Feed');
               } else {
@@ -71,6 +73,7 @@ class Login extends React.Component {
     render() {
         return (
              <View style={styles.container}>
+                 <StatusBar hidden />
                   <Image></Image>
                   <InputText
                     placeholder="Email"

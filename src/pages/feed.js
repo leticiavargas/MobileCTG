@@ -1,9 +1,9 @@
 import React from 'react';
 //import io from 'socket.io-client';
 
-import api from '../services/api'; 
+import api from '../services/Api'; 
 import {View, Image, StyleSheet, TouchableOpacity, FlatList, Text} from 'react-native';
-import {ButtonText, ButtonImage} from '../components/buttons';
+import {ButtonText, ButtonImage} from '../components/Buttons';
 
 /* import camera from '../../assets/camera.png';
 import more from '../../assets/more.png';

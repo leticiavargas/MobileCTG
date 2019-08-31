@@ -2,11 +2,11 @@ import React from 'react';
 import {createAppContainer, createStackNavigator} from 'react-navigation';
 import {Image} from 'react-native';
 
-import Login from './pages/login';
-import Feed from './pages/feed';
-import SignUp from './pages/signup';
-import SeeMore from './pages/seemore';
-import ForgotPwd from './pages/forgotpwd';
+import Login from './pages/Login';
+import Feed from './pages/Feed';
+import SignUp from './pages/SignUp';
+import SeeMore from './pages/SeeMore';
+import ForgotPwd from './pages/ForgotPwd';
 
 
 //import logo from '../assets/logo.png';

@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet, Image} from 'react-native';
 
-import api from '../services/api';
+import api from '../services/Api';
 import { ScrollView } from 'react-native-gesture-handler';
 
 class SeeMore extends React.Component{
